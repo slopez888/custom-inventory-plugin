@@ -1,7 +1,21 @@
 Device Name,Mgmt IP,Location,Function,Platform
-EORcbb01,10.141.1.114,EOR,backbone,A
-EORcbb02,10.141.1.115,EOR,backbone,B
 ORDcore01,10.122.1.114,ORD,core,ios
 ORDcore02,10.122.1.115,ORD,core,ios
-MCOaccess01,10.141.1.141,MCO,access,eos
-MCOaccess02,10.141.1.123,MCO,access,eos
+ORDdist01,10.122.1.116,ORD,distribution,nxos
+ORDdist02,10.122.1.117,ORD,distribution,nxos
+ORDagg01,10.122.1.118,ORD,aggregation,nxos
+ORDagg02,10.122.1.119,ORD,aggregation,nxos
+ORDagg03,10.122.1.120,ORD,aggregation,nxos
+ORDagg04,10.122.1.121,ORD,aggregation,nxos
+ORDaccess01,10.122.1.122,ORD,access,ios
+ORDaccess02,10.122.1.123,ORD,access,ios
+ORDaccess03,10.122.1.124,ORD,access,nxos
+ORDaccess04,10.122.1.125,ORD,access,ios
+ORDaccess05,10.122.1.126,ORD,access,ios
+ORDaccess06,10.122.1.127,ORD,access,nxos
+ORDaccess07,10.122.1.128,ORD,access,ios
+ORDaccess08,10.122.1.129,ORD,access,ios
+ORDaccess09,10.122.1.130,ORD,access,nxos
+ORDaccess10,10.122.1.131,ORD,access,ios
+MCOcore01,10.141.1.114,MCO,core,junos
+MCOcore02,10.141.1.115,MCO,core,junos
