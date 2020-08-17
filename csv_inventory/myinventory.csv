@@ -1,6 +1,7 @@
 Device Name,Mgmt IP,Location,Function,Platform
+EORcbb01,10.141.1.114,EOR,backbone,A
+EORcbb02,10.141.1.115,EOR,backbone,B
 ORDcore01,10.122.1.114,ORD,core,ios
 ORDcore02,10.122.1.115,ORD,core,ios
-EORcore01,10.141.1.114,EOR,backbone,A
-EORcore02,10.141.1.115,EOR,backbone,B
-MOaccess04,10.141.1.125,MCO,access,eos
+MCOaccess01,10.141.1.141,MCO,access,eos
+MCOaccess02,10.141.1.123,MCO,access,eos
