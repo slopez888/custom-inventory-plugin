@@ -65,6 +65,7 @@ consume
         locations = []
         functions = []
         platforms = []
+        netsides = []
         for data in self.myinventory.values():
             if not data['Location'] in locations:
                 locations.append(data['Location'])
@@ -72,19 +73,25 @@ consume
                 functions.append(data['Function'])
             if not data['Platform'] in platforms:
                 platforms.append(data['Platform'])
+            if not data['Netside'] in netsides:
+                netsides.append(data['Netside'])
         for location in locations:
             self.inventory.add_group(location)
         for function in functions:
             self.inventory.add_group(function)
         for platform in platforms:
             self.inventory.add_group(platform)
+        for netside in netsides:
+            self.inventory.add_group(netside)
         #Add the hosts to the groups
         for hostname,data in self.myinventory.items():
             self.inventory.add_host(host=hostname, group=data['Location'])
             self.inventory.add_host(host=hostname, group=data['Function'])
             self.inventory.add_host(host=hostname, group=data['Platform'])
+            self.inventory.add_host(host=hostname, group=data['Netside'])
             self.inventory.set_variable(hostname, 'ansible_host', data['Mgmt IP'])
             self.inventory.set_variable(hostname, 'ansible_network_os', data['Platform'])
+            self.inventory.set_variable(hostname, 'ansible_network_side', data['Netside'])
             
     
     def parse(self, inventory, loader, path, cache):
